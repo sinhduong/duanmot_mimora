@@ -14,10 +14,10 @@ if (isset($_GET['redirect'])) {
                     dangKiTaiKhoan($name, $email, $pass);
                     echo '<script>alert("Đăng ký thành công")</script>';
                     echo '<script>window.location.href = "index.php?redirect=dangnhap"</script>';
-                } else {
+                } 
+            }else {
                     echo '<script>alert("Mật khẩu xác nhận không khớp")</script>';
                 }
-            }
             include "app/views/Client/taikhoan/dangky.php";
             break;
             case 'dangnhap':
